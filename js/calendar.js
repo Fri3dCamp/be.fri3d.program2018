@@ -66,22 +66,22 @@ $(document).ready(function() {
         },
         events: '{{site.baseurl}}/alltracks.json',
         resources: [
-            { 
-                id: 'main-stage', 
+            {
+                id: 'main-stage',
                 title: 'Main Stage'
             },
-            { 
-                id: 'content', 
+            {
+                id: 'content',
                 title: 'Content'
             },
             { id: 'terrein', title: 'Terrein' },
             { id: 'berkenhof', title: 'Berkenhof' },
             { id: 'hardware-hacking-tent', title: 'Hardware Hacking Tent' },
             { id: 'knutselbaar', title: 'KnutselBaar' },
-            { id: 'hoofdgebouw-refter', title: 'Hoofdgebouw Refter' },
-            { id: 'hoofdgebouw-room-2', title: 'Hoofdgebouw Room 2' },
-            { id: 'hoofdgebouw-room-3', title: 'Hoofdgebouw Room 3' },
-            { id: 'hoofdgebouw-room-4', title: 'Hoofdgebouw Room 4' },
+            { id: 'hoofdgebouw-refter', title: 'Hoofdgebouw Solder Station' },
+            { id: 'hoofdgebouw-room-2', title: 'Hoofdgebouw Large LED' },
+            { id: 'hoofdgebouw-room-3', title: 'Hoofdgebouw Medium MOSFET' },
+            { id: 'hoofdgebouw-room-4', title: 'Hoofdgebouw Tiny Tesseract' },
             { id: 'shelter', title: 'Shelter' },
         ],
 
