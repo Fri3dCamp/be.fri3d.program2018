@@ -2710,6 +2710,39 @@ blockquote.citation .author {
 .calendar {
   margin-bottom: 24px;
 }
+@media screen and (max-width: 550px) {
+  .fc-listDay-view .fc-list-item-title::after {
+    display: block;
+  }
+}
+@media screen and (max-width: 550px) {
+  .fc-listDay-view .fc-list-table td {
+    font-size: 14px;
+    padding: 0;
+    border-left: none;
+    border-right: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .fc-listDay-view .fc-list-table td.fc-list-item-time {
+    padding-right: 8px;
+  }
+  .fc-listDay-view .fc-list-table tr {
+    border-top: 1px solid #EDEDED;
+  }
+  .calendar .fc-listDay-view {
+    border: none;
+  }
+  .fc-listDay-view .fc-list-table .fc-event-dot {
+    display: none;
+  }
+  .calendar .fc-listDay-view .fc-list-heading-main {
+    float: none;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+  }
+}
 .fc-listDay-view .fc-list-item-title::after {
   white-space: nowrap;
 }
@@ -2732,16 +2765,16 @@ blockquote.citation .author {
   content: " 📍Knutselbaar";
 }
 .fc-listDay-view .track-hoofdgebouw-refter .fc-list-item-title::after {
-  content: " 📍Hoofdgebouw Refter";
+  content: " 📍Hoofdgebouw Solder Station";
 }
 .fc-listDay-view .track-hoofdgebouw-room-2 .fc-list-item-title::after {
-  content: " 📍Hoofdgebouw Room 2";
+  content: " 📍Hoofdgebouw Large LED";
 }
 .fc-listDay-view .track-hoofdgebouw-room-3 .fc-list-item-title::after {
-  content: " 📍Hoofdgebouw Room 3";
+  content: " 📍Hoofdgebouw Medium MOSFET";
 }
 .fc-listDay-view .track-hoofdgebouw-room-4 .fc-list-item-title::after {
-  content: " 📍Hoofdgebouw Room 4";
+  content: " 📍Hoofdgebouw Tiny Tesseract";
 }
 .fc-listDay-view .track-shelter .fc-list-item-title::after {
   content: " 📍Shelter";

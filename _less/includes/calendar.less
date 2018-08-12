@@ -247,6 +247,40 @@
     margin-bottom: (@margin*3);
 }
 
+.fc-listDay-view .fc-list-item-title::after {
+    @media screen and (max-width:@breakpoint2) {
+        display:block;
+    }
+}
+@media screen and (max-width:@breakpoint2) {
+    .fc-listDay-view .fc-list-table td {
+        font-size: @fntsize-01;
+        padding:0;
+        border-left:none;
+        border-right:none;
+        padding-top:@margin/2;
+        padding-bottom: @margin/2;
+        &.fc-list-item-time {
+            padding-right:@margin;
+        }
+    }
+    .fc-listDay-view .fc-list-table tr {
+        border-top:1px solid @clr-gray5;
+    }
+    .calendar .fc-listDay-view {
+        border:none;
+    }
+    .fc-listDay-view .fc-list-table .fc-event-dot {
+        display:none;
+    }
+    .calendar .fc-listDay-view .fc-list-heading-main {
+        float: none;
+        display: block;
+        font-size: @fntsize-1;
+        text-align: center;
+    }
+}
+
 .fc-listDay-view {
     .fc-list-item-title::after {
         white-space: nowrap;
