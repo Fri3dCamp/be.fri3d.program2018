@@ -3,13 +3,19 @@
 [
 {% for item in items %}
 {%- for slot in item.timeslots -%}
+{%- for loc in site.locations -%}
+    {%- if loc.name == slot.location -%}
+        {%- assign location_ttl = loc.title  -%}
+    {%- endif -%}
+{%- endfor -%}
 {%- if page.filter_loc == 'all' or slot.location == page.filter_loc -%}
 {%- if started == true -%},{%- endif -%}
 {%- assign started = true -%}
     {
         "name": "{{item.name}}",
         "title": "{{item.title | escape}}",
-        "location": "{{slot.location}}",{% if item.allday == true %}
+        "location": "{{slot.location}}",
+        "location_ttl": "{{location_ttl}}",{% if item.allday == true %}
         "allDay": true, 
         "start": "{{slot.start | date: "%Y-%m-%d"}}",
         "end": "{{slot.end | date: "%Y-%m-%d"}}",{% else %}
