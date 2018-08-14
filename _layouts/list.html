@@ -30,6 +30,8 @@
         </tr>
     </thead>
     <tbody class="list">
+
+
       {% for item in site.activities %}
         {% for slot in item.timeslots %}
         <tr class="programma-row">
@@ -37,6 +39,15 @@
             <td>
                 <h2><a href="{{ item.url | prepend: site.baseurl }}" class="act-ttl">{{item.title}}</a></h2>
                 <p class="act-desc visuallyhidden">{{item.desc}}</p>
+                <p class="act-contributor visuallyhidden">
+                    {% for icontr in item.contributors %}
+                        {% for scontr in site.contributors %}
+                            {% if scontr.name == icontr %}
+                                {{ scontr.title }}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                    </p>
                 <p class="act-tags visuallyhidden">{{item.tags | join: ',' }}</p>
             </td>
             <td><span class="act-timestamp visuallyhidden">{{ slot.start }}</span>

@@ -1,5 +1,5 @@
 var options = {
-  valueNames: [ 'act-ttl', 'act-desc', 'act-tags', 'act-time', 'act-timestamp', 'act-location', 'act-type' ]
+  valueNames: [ 'act-ttl', 'act-desc', 'act-contributor', 'act-tags', 'act-time', 'act-timestamp', 'act-location', 'act-type' ]
 };
 
 var filtered = false;
