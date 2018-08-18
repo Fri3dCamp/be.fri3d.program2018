@@ -92,18 +92,7 @@ $(document).ready(function() {
         },
 
         eventClick: function(calEvent, jsEvent, view) {
-
-            $(".calendar-preview .desc").html( he.decode( calEvent.desc ) );
-            $(".calendar-preview h2").text( calEvent.title );
-            $(".calendar-preview .location a").text( calEvent.location_ttl );
-            $(".calendar-preview .location a").attr("href","{{site.baseurl}}/locations/"+calEvent.location);
-            $(".calendar-preview .type").text(calEvent.type);
-            $(".calendar-preview .link").attr("href","{{site.baseurl}}/activities/"+calEvent.name);
-            $(".popover-wrapper").show();
-            $(".calendar-preview").show();
-
-            $(this).addClass('calevent-selected');
-
+            window.location.replace( "{{site.baseurl}}/activities/"+calEvent.name );
         }
     });
 
