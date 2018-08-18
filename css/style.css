@@ -2395,7 +2395,8 @@ blockquote.citation .author {
   padding: 24px;
   position: absolute;
   grid-column: center / span 1;
-  grid-row: center / span 1;
+  grid-row: span 1;
+  margin-top: -410px;
   z-index: 20;
   display: none;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
