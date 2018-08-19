@@ -48,7 +48,7 @@ $(document).ready(function() {
             right: 'agendaDay listDay'
         },
         allDaySlot: true,
-        defaultDate: '2018-08-18',
+        defaultDate: '2018-08-20',
         defaultView: 'agendaDay',
         minTime: '10:00:00',
         maxTime: '23:00:00',
@@ -87,7 +87,7 @@ $(document).ready(function() {
 
         eventAfterAllRender: function() {
             if ( !$(".fc-day2-button").hasClass("fc-state-active") && !$(".fc-day3-button").hasClass("fc-state-active") ) {
-                $(".fc-day1-button").addClass("fc-state-active");
+                $(".fc-day3-button").addClass("fc-state-active");
             }
         },
 
