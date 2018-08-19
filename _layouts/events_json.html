@@ -32,7 +32,8 @@
         "type": "{{item.type}}",
         "cost": "{{item.cost}}",
         "resourceId": "{{slot.location}}",
-        "desc": "{{ item.content | strip_newlines | escape }}"
+        "desc": "{{ item.content | strip_newlines | escape }}",
+        "url": "{{ site.baseurl }}/activities/{{item.name}}"
     }
 {%- endif -%}
 {%- endfor -%}
